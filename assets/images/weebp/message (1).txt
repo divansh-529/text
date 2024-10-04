@@ -1,0 +1,61 @@
+<section class="flex justify-center items-center flex-col py-10 ">
+        <div class="container px-3 flex justify-center items-center flex-col">
+            <p
+                class="font-messiri font-normal text-xs leading-[150%] border-[1px] border-medium-blue py-2 lg:mb-[10px] mb-2 px-4 rounded-lg ">
+                Performance Marketing Agency</p>
+            <h1 class="font-messiri lg:mb-4 mb-2 text-3xl font-bold leading-[120%] text-blue">Why Webserv?</h1>
+            <p
+                class="font-lato font-normal text-base leading-[150%] max-w-[800px] text-center lg:mb-10 mb-7 text-light-black">
+                We use a
+                data driven approach to deliver qualified leads at a fraction of the price of the competition.
+                Our approach relies on first and third party data to target the right people at the right time.</p>
+            <div class="flex flex-wrap justify-center lg:justify-start">
+                <div class="lg:w-4/12 px-3 lg:mb-0 mb-6">
+                    <div
+                        class="sec-2-card p-5 shadow-default min-h-[300px] max-h-[300px] hover:bg-blue group rounded-xl">
+                        <img class="xl:pb-[30px] lg:pb-4 pb-3" src="./assets/img/svg/sec-2-analytics-img.svg"
+                            alt="Analytics-img">
+                        <h1
+                            class="font-messiri xl:mb-4 lg:mb-3 mb-2 font-semibold text-2xl group-hover:text-white leading-[120%] text-blue">
+                            Advanced Analytics
+                        </h1>
+                        <p
+                            class="max-w-[324px] leading-[150%] text-light-blue font-lato font-normal group-hover:text-light-white text-base">
+                            We
+                            utilize a comprehensive suite of cutting-edge analytics tools to optimize your campaigns
+                            and drive continuous improvement.</p>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 px-3 lg:mb-0 mb-6">
+                    <div
+                        class="sec-2-card p-5 shadow-default min-h-[300px] max-h-[300px] hover:bg-blue group rounded-xl">
+                        <img class="xl:pb-[30px] lg:pb-4 pb-3" src="./assets/img/svg/sec-2-tailored-img.svg"
+                            alt="Analytics-img">
+                        <h1
+                            class="font-messiri xl:mb-4 lg:mb-3 mb-2 font-semibold text-2xl group-hover:text-white leading-[120%] text-blue max-w-[234px]">
+                            Tailored Ad Copy and Landing Pages
+                        </h1>
+                        <p
+                            class="max-w-[324px] leading-[150%] text-light-blue font-lato font-normal group-hover:text-light-white text-base">
+                            Our services include the development of high-quality Ad Creatives, Ad Copy, and Landing
+                            Pages, designed to maximize your campaign's performance.</p>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 px-3 lg:mb-0 mb-6">
+                    <div
+                        class="sec-2-card p-5 shadow-default min-h-[300px] max-h-[300px] hover:bg-blue group rounded-xl">
+                        <img class="xl:pb-[30px] lg:pb-4 pb-3" src="./assets/img/svg/sec-2-kpi-img.svg"
+                            alt="Analytics-img">
+                        <h1
+                            class="font-messiri xl:mb-4 lg:mb-3 mb-2 font-semibold text-2xl group-hover:text-white leading-[120%] text-blue">
+                            In-Depth KPI Reporting
+                        </h1>
+                        <p
+                            class="max-w-[324px] leading-[150%] text-light-blue font-lato font-normal group-hover:text-light-white text-base">
+                            At Webserv, transparency is fundamental to our approach, and we are committed to keeping you
+                            well-informed about your campaign's performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

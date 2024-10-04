@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordions = document.querySelectorAll('.accordion-button');
+
+            accordions.forEach(accordion => {
+                const accordionButton = accordion;
+                const accordionContent = accordion.nextElementSibling;
+                const accordionIcon = accordion.querySelector('.accordion-icon');
+                const accordionContainer = accordion.parentElement;
+
+                accordionButton.addEventListener('click', function () {
+                    accordionContent.classList.toggle('hidden');
+                    accordionIcon.textContent = accordionContent.classList.contains('hidden') ? '+' : '-';
+                    // Toggle background color on open/close
+                    if (accordionContent.classList.contains('hidden')) {
+                        accordionContainer.classList.remove('bg-[#F3F5F6]');
+                    } else {
+                        accordionContainer.classList.add('bg-[#F3F5F6]');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <section class="flex flex-col justify-center items-center space-y-4 min-h-screen">
+
+        <!-- Accordion 1 -->
+        <div id="accordion-container-1"
+            class="w-full max-w-[961px] mx-auto bg-white rounded-lg shadow-md border border-[#1B3353]">
+            <button class="accordion-button w-full flex justify-between items-center p-4 focus:outline-none">
+                <span class="font-semibold">Accordion 1 Title</span>
+                <span class="accordion-icon text-2xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 hidden">
+                <p class="text-gray-700">This is the content for Accordion 1.</p>
+            </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div id="accordion-container-2"
+            class="w-full max-w-[961px] mx-auto bg-white rounded-lg shadow-md border border-[#1B3353]">
+            <button class="accordion-button w-full flex justify-between items-center p-4 focus:outline-none">
+                <span class="font-semibold">Accordion 2 Title</span>
+                <span class="accordion-icon text-2xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 hidden">
+                <p class="text-gray-700">This is the content for Accordion 2.</p>
+            </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div id="accordion-container-3"
+            class="w-full max-w-[961px] mx-auto bg-white rounded-lg shadow-md border border-[#1B3353]">
+            <button class="accordion-button w-full flex justify-between items-center p-4 focus:outline-none">
+                <span class="font-semibold">Accordion 3 Title</span>
+                <span class="accordion-icon text-2xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 hidden">
+                <p class="text-gray-700">This is the content for Accordion 3.</p>
+            </div>
+        </div>
+
+        <!-- Accordion 4 -->
+        <div id="accordion-container-4"
+            class="w-full max-w-[961px] mx-auto bg-white rounded-lg shadow-md border border-[#1B3353]">
+            <button class="accordion-button w-full flex justify-between items-center p-4 focus:outline-none">
+                <span class="font-semibold">Accordion 4 Title</span>
+                <span class="accordion-icon text-2xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 hidden">
+                <p class="text-gray-700">This is the content for Accordion 4.</p>
+            </div>
+        </div>
+
+        <!-- Accordion 5 -->
+        <div id="accordion-container-5"
+            class="w-full max-w-[961px] mx-auto bg-white rounded-lg shadow-md border border-[#1B3353]">
+            <button class="accordion-button w-full flex justify-between items-center p-4 focus:outline-none">
+                <span class="font-semibold">Accordion 5 Title</span>
+                <span class="accordion-icon text-2xl font-bold">+</span>
+            </button>
+            <div class="accordion-content p-4 hidden">
+                <p class="text-gray-700">This is the content for Accordion 5.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
